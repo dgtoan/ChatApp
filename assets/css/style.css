@@ -7,13 +7,34 @@
     width: 32vw;
     min-width: 280px;
     height: 100%;
-    background-color: aquamarine;
 }
 
 .main {
     width: 100%;
     height: 100%;
+}
+
+.nav__head {
+    height: 60px;
+    width: 100%;
     background-color: aqua;
 }
 
+.nav__body {
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+}
+
+.main__head {
+    height: 60px;
+    width: 100%;
+    background-color: blue;
+}
+
+.main__body {
+    height: 100%;
+    width: 100%;
+    background-color: darkcyan;
+}
 
