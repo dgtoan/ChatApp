@@ -9,32 +9,138 @@
     height: 100%;
 }
 
+.space {
+    height: 100%;
+    border: 1px solid rgb(248, 248, 248);
+}
+
 .main {
     width: 100%;
-    height: 100%;
 }
 
-.nav__head {
-    height: 60px;
+.main__nav {
+    height: var(--nav-height);
     width: 100%;
-    background-color: aqua;
-}
-
-.nav__body {
-    height: 100%;
-    width: 100%;
-    background-color: beige;
-}
-
-.main__head {
-    height: 60px;
-    width: 100%;
-    background-color: blue;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 
 .main__body {
-    height: 100%;
+    height: calc(100vh - var(--nav-height));
     width: 100%;
-    background-color: darkcyan;
 }
 
+.nav__head {
+    display: flex;
+    height: var(--nav-height);
+    width: 100%;
+    padding: 10px;
+}
+
+.nav__head__menu {
+    font-size: 2rem;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    cursor: pointer;
+}
+
+.nav__head__menu__icon {
+    margin: auto;
+}
+
+.nav__head__menu:hover {
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.nav__head__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    height: 48px;
+    flex: 1;
+}
+
+.nav__head__title > a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bx-edit {
+    font-size: 1.6rem;
+    margin-top: 13px;
+}
+
+.nav__list {
+    height: calc(100vh - var(--nav-height));
+    overflow-y: auto;
+}
+
+.nav__list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.nav__list::-webkit-scrollbar-track {
+    background: rgb(248, 248, 248);
+}
+
+.nav__list::-webkit-scrollbar-thumb {
+    background: rgb(232, 232, 232);
+    border-radius: 10px;
+}
+
+.nav__list::-webkit-scrollbar-thumb:hover {
+    background: rgb(220, 220, 220);
+}
+
+.list__item {
+    margin: 2px 6px;
+    height: 80px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+}
+
+.item__avatar__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.item__user {
+    margin: auto 6px;
+    flex: 1;
+}
+
+.item__user__name {
+    font-size: 1.2rem;
+}
+
+.item__user__mess {
+    color: #888;
+}
+
+.item__status {
+    margin: auto 10px;
+    font-size: 0.8rem;
+}
+
+.item__time {
+    color: #aaa;
+}
+
+.item__status > i {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.item--active {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.list__item:hover {
+    background-color: rgba(240, 240, 240, 0.6);
+}

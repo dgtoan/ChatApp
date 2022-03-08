@@ -1,4 +1,18 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    color: #444;
+}
+
+:root {
+    --nav-height: 60px;
+}
+
+html {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.hidden {
+    display: none;
 }
