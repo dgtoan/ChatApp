@@ -146,9 +146,6 @@
     background-color: rgba(240, 240, 240, 0.6);
 }
 
-.nav__user__avatar {
-}
-
 .nav__user__avatar__img {
     width: 44px;
     height: 44px;
@@ -209,11 +206,20 @@
 .messenger__list {
     width: 100%;
     height: calc(100% - 68px);
-    background-color: hotpink;
 }
 
 .messenger__item {
+    background-color: #fff;
+    line-height: 32px;
+    margin-bottom: 4px;
+    max-width: 72%;
+    padding: 4px 8px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
+.messenger__item.user {
+    margin-left: auto;
 }
 
 .messenger__control {
@@ -221,6 +227,38 @@
     width: 100%;
     border-radius: 16px;
     background-color: white;
+    display: flex;
+}
+
+.messenger__icon {
+    display: flex;
+    margin-left: 8px;
+}
+
+.messenger__control  i {
+    font-size: 1.4rem;
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.messeger__input {
+    flex: 1;
+    margin: 0 8px;
+    border: none;
+}
+
+.messenger__control  i:hover {
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.messenger__list-icon > i {
+    margin-right: 8px;
 }
 
 @media (max-width: 86em) and (min-width: 64.0625em) {
