@@ -79,21 +79,22 @@
     overflow-y: auto;
 }
 
-.nav__list::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar {
     width: 8px;
 }
 
-.nav__list::-webkit-scrollbar-track {
-    background: rgb(248, 248, 248);
-}
-
-.nav__list::-webkit-scrollbar-thumb {
-    background: rgb(232, 232, 232);
+.scrollbar::-webkit-scrollbar-track {
+    background: rgba(248, 248, 248, 1);
     border-radius: 10px;
 }
 
-.nav__list::-webkit-scrollbar-thumb:hover {
-    background: rgb(220, 220, 220);
+.scrollbar::-webkit-scrollbar-thumb {
+    background: rgb(200, 200, 200);
+    border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgb(160, 160, 160);
 }
 
 .list__item {
@@ -200,22 +201,28 @@
     width: 100%;
     max-width: 720px;
     margin: auto;
-    padding: 0 10px;
 }
 
 .messenger__list {
     width: 100%;
     height: calc(100% - 68px);
+    overflow-y: auto;
+}
+
+.messenger__list::-webkit-scrollbar {
+    display: none;
 }
 
 .messenger__item {
     background-color: #fff;
-    line-height: 32px;
-    margin-bottom: 4px;
-    max-width: 72%;
-    padding: 4px 8px;
+    line-height: 18px;
+    margin: 4px 8px;
+    width: fit-content;
+    max-width: 60%;
+    padding: 8px 12px;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 1.12rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 50px;
 }
 
 .messenger__item.user {
@@ -224,10 +231,12 @@
 
 .messenger__control {
     height: 48px;
-    width: 100%;
+    width: calc(100% - 16px);
+    margin: 8px;
     border-radius: 16px;
     background-color: white;
     display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .messenger__icon {
@@ -246,10 +255,13 @@
     cursor: pointer;
 }
 
-.messeger__input {
+.messenger__input {
     flex: 1;
     margin: 0 8px;
     border: none;
+    outline: none;
+    font-size: 1.12rem;
+    font-family: 'Fredoka', sans-serif;
 }
 
 .messenger__control  i:hover {
