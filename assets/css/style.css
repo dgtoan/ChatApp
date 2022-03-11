@@ -79,22 +79,21 @@
     overflow-y: auto;
 }
 
-.scrollbar::-webkit-scrollbar {
+.nav__list::-webkit-scrollbar {
     width: 8px;
 }
 
-.scrollbar::-webkit-scrollbar-track {
-    background: rgba(248, 248, 248, 1);
+.nav__list::-webkit-scrollbar-track {
+    background: rgb(248, 248, 248);
+}
+
+.nav__list::-webkit-scrollbar-thumb {
+    background: rgb(232, 232, 232);
     border-radius: 10px;
 }
 
-.scrollbar::-webkit-scrollbar-thumb {
-    background: rgb(200, 200, 200);
-    border-radius: 10px;
-}
-
-.scrollbar::-webkit-scrollbar-thumb:hover {
-    background: rgb(160, 160, 160);
+.nav__list::-webkit-scrollbar-thumb:hover {
+    background: rgb(220, 220, 220);
 }
 
 .list__item {
