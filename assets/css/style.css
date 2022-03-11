@@ -79,21 +79,22 @@
     overflow-y: auto;
 }
 
-.nav__list::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar {
     width: 8px;
 }
 
-.nav__list::-webkit-scrollbar-track {
-    background: rgb(248, 248, 248);
-}
-
-.nav__list::-webkit-scrollbar-thumb {
-    background: rgb(232, 232, 232);
+.scrollbar::-webkit-scrollbar-track {
+    background: rgba(248, 248, 248, 1);
     border-radius: 10px;
 }
 
-.nav__list::-webkit-scrollbar-thumb:hover {
-    background: rgb(220, 220, 220);
+.scrollbar::-webkit-scrollbar-thumb {
+    background: rgb(200, 200, 200);
+    border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgb(160, 160, 160);
 }
 
 .list__item {
@@ -216,9 +217,14 @@
     background-color: #fff;
     line-height: 18px;
     margin: 4px 8px;
+<<<<<<< HEAD
     width: -moz-fit-content;
     width: fit-content;
     max-width: 68%;
+=======
+    width: fit-content;
+    max-width: 60%;
+>>>>>>> 995bb8e6685045597e609d5aa92d6b1d62f3fe8c
     padding: 8px 12px;
     border-radius: 10px;
     font-size: 1.12rem;
