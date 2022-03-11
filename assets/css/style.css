@@ -217,14 +217,9 @@
     background-color: #fff;
     line-height: 18px;
     margin: 4px 8px;
-<<<<<<< HEAD
     width: -moz-fit-content;
     width: fit-content;
     max-width: 68%;
-=======
-    width: fit-content;
-    max-width: 60%;
->>>>>>> 995bb8e6685045597e609d5aa92d6b1d62f3fe8c
     padding: 8px 12px;
     border-radius: 10px;
     font-size: 1.12rem;
