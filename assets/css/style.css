@@ -158,6 +158,11 @@
     flex: 1;
 }
 
+.nav__back-icon {
+    margin: auto 0 auto 4px;
+    display: none;
+}
+
 .nav__user__name {
     font-size: 1.2rem;
 }
@@ -215,7 +220,7 @@
 .messenger__item {
     background-color: #fff;
     line-height: 18px;
-    margin: 4px 8px;
+    margin: 8px 0 0 16px;
     width: -moz-fit-content;
     width: fit-content;
     max-width: 68%;
@@ -226,13 +231,14 @@
 }
 
 .messenger__item.user {
+    margin: 8px 16px 0 0;
     margin-left: auto;
 }
 
 .messenger__control {
     height: 48px;
-    width: calc(100% - 16px);
-    margin: 8px;
+    width: calc(100% - 32px);
+    margin: 8px 16px;
     border-radius: 16px;
     background-color: white;
     display: flex;
@@ -273,6 +279,10 @@
     margin-right: 8px;
 }
 
+.bx-arrow-back {
+    margin: 9px;
+}
+
 @media (max-width: 86em) and (min-width: 64.0625em) {
     .messenger {
         max-width: 600px;
@@ -290,5 +300,16 @@
 }
 
 @media (max-width: 46.1875em) {
-
+    .nav__back-icon {
+        display: block;
+    }
+    .main {
+        display: none;
+    }
+    .nav {
+        width: 100%;
+    }
+    .nav__list::-webkit-scrollbar {
+        display: none;
+    }
 }
